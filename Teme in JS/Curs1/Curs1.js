@@ -39,17 +39,17 @@ console.log("Numele complet are ",nume.length+prenume.length," caractere");
 //              - lungimea;
 //              - lățimea.
 //              Afișează: 'Aria dreptunghiului este x'.
-var lungime =6;
-var latime =10;
+var lungime = 6;
+var latime = 10;
 console.log("Aria dreptunghiului este de ",lungime*latime," de cm");
 
 // Exercitiul 8 - Având stringul: 'Coral is either the stupidest animal or the smartest rock':
 //              - afișează de câte ori apare cuvântul 'the';
 
 var prop = "Coral is either the stupidest animal or the smartest rock";
-var nr=0;
-for (i=0; i<prop.length-3; i++ ){
-    if(prop.substring(i,i+3)==("the")) {
+var nr = 0;
+for (i = 0; i < prop.length-3; i++ ){
+    if(prop.substring(i,i+3) == ("the")) {
         nr = nr+1;
     }
 }

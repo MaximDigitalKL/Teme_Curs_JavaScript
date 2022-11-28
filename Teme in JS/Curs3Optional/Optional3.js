@@ -21,11 +21,11 @@ var schimbari_efectuate = 3;
 console.log(echipa);
 const prompt = require("prompt-sync")();
 while (schimbari_efectuate<=3 && schimbari_efectuate>0){
-    var jucator= prompt("Introduceti un jucator: ");
+    var jucator = prompt("Introduceti un jucator: ");
     if (echipa.includes(jucator) && schimbari_efectuate>0){
         eliminati=jucator;
         echipa[echipa.indexOf(jucator)]=rezerve[0];
-        schimb=rezerve[0];
+        schimb = rezerve[0];
         rezerve.splice(0,1);;
         schimbari_efectuate= schimbari_efectuate-1;
         console.log("A intrat ", schimb, " si a iesit ", eliminati, " mai aveti ", rezerve.length," schimbari");

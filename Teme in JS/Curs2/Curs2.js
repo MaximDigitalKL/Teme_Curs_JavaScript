@@ -19,7 +19,7 @@ if (x>0){
 }
 
 // Exercitiul 4 -  Verifică și afișează dacă x este între -2 și 13.
-if (x>-2 && x<13){
+if (x >- 2 && x < 13){
     console.log(x," se afla in intervalul dat");
 }else{
     console.log(x," este in afara intervalului");

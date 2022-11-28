@@ -4,8 +4,8 @@ const prompt = require("prompt-sync")();
 
 // Exercitiul 1 - Verifică dacă x are minim 4 cifre (x e int).
 //                (ex: 7895 are 4 cifre, 10 nu are minim 4 cifre)
-var x =120;
-var str= String(x);
+var x = 120;
+var str = String(x);
 if( str.length <=4 ){
     console.log("Numarul x are minim 4 cifre");
 }else{
@@ -13,22 +13,22 @@ if( str.length <=4 ){
 }
 
 // Exercitiul 2 - Verifică dacă x are exact 6 cifre
-if (str.length==6){
+if (str.length == 6){
     console.log("Numarul x are exact 6 cifre");
 }else{
     console.log("Numarul x NU are exact 6 cifre");
 }
 
 // Exercitiul 3 - Verifică dacă x este număr par sau impar (x e int).
-if((x%2)==0){
+if((x%2) == 0){
     console.log("Numarul x este par");
 }else{
     console.log("Numarul x este impar");
 }
 
 // Exercitiul 4 - x, y, z (int). Afișează care este cel mai mare dintre ele?
-var y =30;
-var z= 30;
+var y = 30;
+var z = 30;
 if(x>y && x>z){
     console.log("x este numarul mai mare");
 }else if (y>x && y>z){
@@ -49,12 +49,12 @@ if((x+y+z)==180){
 //              ● Citiți de la tastatură un int x
 //              ● Afișează stringul fără ultimele x caractere
 //     Exemplu: daca ati ales 7 => 'Coral is either the stupidest animal or the smarte'
-var nr=prompt("Introduceti nr: ");
-var prop="Coral is either the stupidest animal or the smartest rock";
+var nr = prompt("Introduceti nr: ");
+var prop = "Coral is either the stupidest animal or the smartest rock";
 console.log(prop.substring(0,prop.length-nr));
 
 // Exercitiul 7 - Același string. Declară un string nou care să fie format din primele 5 caractere + ultimele 5
-var sub= prop.substring(0,5)+ prop.substring(prop.length-5,prop.length);
+var sub = prop.substring(0,5)+ prop.substring(prop.length-5,prop.length);
 console.log(sub);
 
 // Exercitiul 8 - Același string.
@@ -75,8 +75,8 @@ assert(cuv.substring(0,1).toUpperCase()==cuv.substring(cuv.length-1,cuv.length).
 //               ● Afișați doar numerele impare
 //           (hint: folositi slicing, controlați din pas)
 var nr = "0123456789";
-var par="";
-var impar="";
+var par = "";
+var impar = "";
 for (i=0; i<nr.length; i++){
     if (parseInt(nr.substring(i,i+1))%2==0){
         par=par+i;

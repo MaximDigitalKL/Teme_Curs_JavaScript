@@ -4,14 +4,14 @@ var nume = "Maxim";
 console.log(nume.substring(nume.length/2,(nume.length/2)+1));
 
 // Exercitiul 2 - Verifică dacă un string este palindrom.
-var pali="123454321";
-var rev="";
-var char="";
-for (i=0; i<pali.length; i++) {
-    char=pali.charAt[i];
-    rev=char+rev;
+var pali = "123454321";
+var rev = "";
+var char = "";
+for (i = 0; i<pali.length; i++) {
+    char = pali.charAt[i];
+    rev = char+rev;
 }
-if (pali=rev){
+if (pali = rev){
     console.log("Este palindrom");
 }else{
     console.log("Nu este palindrom")
@@ -48,5 +48,5 @@ console.log(lit+nou+lit);
 
 var user = prompt("Introduceti userul: ");
 var parola = prompt("Introduceti parola: ");
-var steluta ="*";
+var steluta = "*";
 console.log("Parola pentru user ", user," este ", steluta.repeat(parola.length), " si are ", parola.length, " caractere");
